@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:phonepay/common/constants/apptheme.dart';
-import 'package:phonepay/features/home/home_screen.dart';
+
+import 'package:phonepay/features/home/root_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       themeMode: ThemeMode.system,
-      theme: phonePeLightTheme,
-      darkTheme: phonePeDarkTheme,
-      home: HomeScreen(),
+      theme: lightTheme,
+      darkTheme: darkTheme,
+      home: RootScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
